@@ -1,11 +1,11 @@
-import React from 'react'
-import DisplayDifficulty from './Components/DisplayDifficulty/DisplayDifficulty.jsx'
 
+import { DisplayDifficulty } from './Components/DisplayDifficulty/DisplayDifficulty.jsx'
+import { MenuListItem } from './Components/menuListItem/MenuListItem.jsx'
 export default function App() {
   return (
     <div>
-      <p>Hello There</p>
-      <DisplayDifficulty />
+      <MenuListItem difficulty="Low"></MenuListItem>
+      <DisplayDifficulty  />
     </div>
   )
 }

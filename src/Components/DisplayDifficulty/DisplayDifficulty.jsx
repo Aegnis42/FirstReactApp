@@ -1,11 +1,11 @@
-import React from "react"
 
-import style from './displayDifficulty.module.css'
 
-export default function DisplayDifficulty (props) {
+import styles from './displayDifficulty.module.css'
+
+export function DisplayDifficulty (props) {
     return (
-        <div className={style.container}>
-            <p className={style.text}>Hello world</p>
+        <div className={styles.container}>
+            {props.difficulty ? `Difficulty set to : ${props.difficulty}` : "No difficulty set"}
         </div>
     )
 }
